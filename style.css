@@ -88,3 +88,43 @@ button:hover {
 .delete-btn:hover {
     background: #a71d2a;
 }
+#tasklist {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+#tasklist li {
+  background-color: #f4f4f4; /* Light gray background for each item */
+  margin: 8px 0; /* Space between items */
+  padding: 10px 15px; /* Padding inside the list item */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for the text */
+  font-family: Arial, sans-serif; /* Clean font */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between text and buttons */
+  align-items: center; /* Center align the items vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#tasklist li:hover {
+  background-color: #e0e0e0; /* Slightly darker gray on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+#tasklist li button {
+  background-color: #ff6b6b; /* Red button */
+  border: none; /* Remove default border */
+  color: white; /* White text */
+  padding: 5px 10px; /* Padding inside the button */
+  border-radius: 3px; /* Rounded corners for button */
+  font-size: 14px; /* Font size for button text */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+
+#tasklist li button:hover {
+  background-color: #ff4c4c; /* Darker red on hover */
+}
+
