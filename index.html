@@ -9,29 +9,10 @@
 <body>
     <div class="container">
 <h3>TO Do List :</h3>
-<input type="text" placeholder="Enter your works to do :-" id="box1">
-<button onclick="todoBtn()">SUBMIT</button>
+<input type="text" placeholder="Enter your works to do :-" id="todoinput">
+<button id="addtodo" >SUBMIT</button>
+ <ul id="tasklist"></ul>
     </div>    
- <script>
-     let num = 1
-    function todoBtn(){
-    let inputEL = document.querySelector("#box1")
-    let value = inputEL.value; 
-
-    if(value ===""){
-        alert("enter a text to do")
-        return;
-
-    }
-    let newdiv =document.createElement("div")
-    newdiv.innerHTML = (num +". your task is - :"+ value)
-    
-    document.querySelector("body").appendChild(newdiv)
-
-    num =  num + 1
-    
-    }
-
- </script>
+ <script src="script.js"></script>
 </body>
 </html>
